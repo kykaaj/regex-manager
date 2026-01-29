@@ -217,7 +217,8 @@ const packFiles = [
   "clocks",
   "transitions",
   "music-player",
-  "infoblock",
+  "infoblock-pc",
+  "infoblock-mobile",
   "psychological-portraits-pc",
   "psychological-portraits-mobile"
 ];

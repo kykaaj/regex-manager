@@ -208,6 +208,7 @@ const packFiles = [
   "html-vanisher",
   "braille-blank-jb",
   "clocks",
+  "clocks-minimal",
   "transitions",
   "infoblock-pc",
   "infoblock-mobile",
@@ -348,4 +349,3 @@ window.RegexManager = {
   remove: removeRegexPack,
   debug: openDebugger
 };
-

@@ -210,15 +210,17 @@ function escapeHtml(text) {
 }
 
 async function loadRegexPacks() {
-  const packFiles = [
-    "hide-reasoning",
-    "html-vanquisher",
-    "braille-blank-jb",
-    "clocks",
-    "transitions",
-    "music-player",
-    "infoblock"
-  ];
+const packFiles = [
+  "hide-reasoning",
+  "html-vanquisher",
+  "braille-blank-jb",
+  "clocks",
+  "transitions",
+  "music-player",
+  "infoblock",
+  "psychological-portraits-pc",
+  "psychological-portraits-mobile"
+];
 
   for (const file of packFiles) {
     try {

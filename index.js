@@ -203,18 +203,17 @@ function escapeHtml(text) {
 }
 
 async function loadRegexPacks() {
-  const packFiles = [
-    "hide-reasoning",
-    "html-vanisher",
-    "braille-blank-jb",
-    "clocks",
-    "transitions",
-    "music-player",
-    "infoblock-pc",
-    "infoblock-mobile",
-    "psychological-portraits-pc",
-    "psychological-portraits-mobile"
-  ];
+const packFiles = [
+  "hide-reasoning",
+  "html-vanisher",
+  "braille-blank-jb",
+  "clocks",
+  "transitions",
+  "infoblock-pc",
+  "infoblock-mobile",
+  "psychological-portraits-pc",
+  "psychological-portraits-mobile"
+];
 
   for (const file of packFiles) {
     try {
@@ -349,3 +348,4 @@ window.RegexManager = {
   remove: removeRegexPack,
   debug: openDebugger
 };
+

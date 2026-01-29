@@ -77,21 +77,21 @@
       "minDepth": null,
       "maxDepth": null
     },
-    {
-      "id": "mob-99a88725-8cc4-4c72-8174-a127459fa9e0",
-      "scriptName": "├ infoblock mobile",
-      "findRegex": "/⸎([^|⸎]+)⸎/g",
-      "replaceString": "<label for=\"mm-r1\" class=\"mm-btn mm-b1\"><span class=\"mm-ico\">👤</span></label><div class=\"mm-panel mm-p1\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
-      "trimStrings": [],
-      "placement": [1, 2, 6],
-      "disabled": false,
-      "markdownOnly": true,
-      "promptOnly": false,
-      "runOnEdit": true,
-      "substituteRegex": 0,
-      "minDepth": null,
-      "maxDepth": null
-    },
+{
+  "id": "mob-99a88725-8cc4-4c72-8174-a127459fa9e0",
+  "scriptName": "├ infoblock mobile",
+  "findRegex": "/⸎([^⸎]*)⸎/g",
+  "replaceString": "<label for=\"mm-r1\" class=\"mm-btn mm-b1\"><span class=\"mm-ico\">👤</span></label><div class=\"mm-panel mm-p1\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
+  "trimStrings": [],
+  "placement": [1, 2, 6],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+},
     {
       "id": "mob-f2ffd144-c63a-4988-90e4-f8cdd5eb7077",
       "scriptName": "├ infoblock mobile",
@@ -107,21 +107,21 @@
       "minDepth": null,
       "maxDepth": null
     },
-    {
-      "id": "mob-92618aee-8b05-46b1-a93a-409d585bf394",
-      "scriptName": "├ infoblock mobile",
-      "findRegex": "/⁂([^⁂]+)⁂/g",
-      "replaceString": "</div><label for=\"mm-r2\" class=\"mm-btn mm-b2\"><span class=\"mm-ico\">💕</span></label><div class=\"mm-panel mm-p2\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
-      "trimStrings": [],
-      "placement": [1, 2, 6],
-      "disabled": false,
-      "markdownOnly": true,
-      "promptOnly": false,
-      "runOnEdit": true,
-      "substituteRegex": 0,
-      "minDepth": null,
-      "maxDepth": null
-    },
+{
+  "id": "mob-92618aee-8b05-46b1-a93a-409d585bf394",
+  "scriptName": "├ infoblock mobile",
+  "findRegex": "/⁂([^⁂]*)⁂/g",
+  "replaceString": "</div><label for=\"mm-r2\" class=\"mm-btn mm-b2\"><span class=\"mm-ico\">💕</span></label><div class=\"mm-panel mm-p2\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
+  "trimStrings": [],
+  "placement": [1, 2, 6],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+},
     {
       "id": "mob-5bf6e58d-d3f9-4ee2-8168-5dacbbf8339e",
       "scriptName": "├ infoblock mobile",
@@ -152,21 +152,21 @@
       "minDepth": null,
       "maxDepth": null
     },
-    {
-      "id": "mob-8114277d-f819-418e-a1a1-045a9a061ec6",
-      "scriptName": "├ infoblock mobile",
-      "findRegex": "/⁕([^|⁕]+)⁕/g",
-      "replaceString": "<label for=\"mm-r4\" class=\"mm-btn mm-b4\"><span class=\"mm-ico\">💭</span></label><div class=\"mm-panel mm-p4\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
-      "trimStrings": [],
-      "placement": [1, 2, 6],
-      "disabled": false,
-      "markdownOnly": true,
-      "promptOnly": false,
-      "runOnEdit": true,
-      "substituteRegex": 0,
-      "minDepth": null,
-      "maxDepth": null
-    },
+{
+  "id": "mob-8114277d-f819-418e-a1a1-045a9a061ec6",
+  "scriptName": "├ infoblock mobile",
+  "findRegex": "/⁕([^|⁕]*)⁕(?!.*\\|)/g",
+  "replaceString": "<label for=\"mm-r4\" class=\"mm-btn mm-b4\"><span class=\"mm-ico\">💭</span></label><div class=\"mm-panel mm-p4\" style=\"position:relative\"><label for=\"mm-r0\" class=\"mm-x\">✕</label>",
+  "trimStrings": [],
+  "placement": [1, 2, 6],
+  "disabled": false,
+  "markdownOnly": true,
+  "promptOnly": false,
+  "runOnEdit": true,
+  "substituteRegex": 0,
+  "minDepth": null,
+  "maxDepth": null
+},
     {
       "id": "mob-c6157985-8edd-4068-9940-791a1da9c075",
       "scriptName": "└ infoblock mobile",
@@ -184,3 +184,4 @@
     }
   ]
 }
+

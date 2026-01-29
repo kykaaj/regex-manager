@@ -20,7 +20,6 @@ jQuery(async () => {
     $("#extensions_settings2").append(settingsHtml);
     console.log("[Regex Manager] HTML загружен");
 
-    // Загрузить сохранённые настройки
     if (extension_settings[extensionName]) {
       window.RegexManagerData.enabled = extension_settings[extensionName].enabled || [];
       window.RegexManagerData.active = extension_settings[extensionName].active !== false;
@@ -30,14 +29,12 @@ jQuery(async () => {
     renderPackList();
     updateToggleButton();
 
-    // Применить сохранённые паки при загрузке
     if (window.RegexManagerData.active) {
       for (const packId of window.RegexManagerData.enabled) {
         injectRegexPack(packId);
       }
     }
 
-    // Обработчик кнопки вкл/выкл расширения
     $("#regex-manager-toggle").on("click", async function() {
       window.RegexManagerData.active = !window.RegexManagerData.active;
 
@@ -62,7 +59,6 @@ jQuery(async () => {
       }
     });
 
-    // Обработчик кнопки отладки
     $("#regex-manager-debug").on("click", function() {
       openDebugger();
     });
@@ -88,7 +84,6 @@ async function openDebugger() {
   const packs = window.RegexManagerData.packs;
   const enabledPacks = window.RegexManagerData.enabled;
 
-  // Собираем все активные регексы
   let allScripts = [];
   for (const packId of enabledPacks) {
     const pack = packs[packId];
@@ -178,7 +173,6 @@ async function openDebugger() {
       }
     }
 
-    // Показать результат
     const outputEl = popup.find("#debug-output");
     if (renderMode === "html") {
       outputEl.html(result);
@@ -186,7 +180,6 @@ async function openDebugger() {
       outputEl.text(result);
     }
 
-    // Показать шаги
     const stepsEl = popup.find("#debug-steps");
     if (steps.length === 0) {
       stepsEl.html('<div class="no-changes">Ни один регекс не сработал</div>');
@@ -210,18 +203,18 @@ function escapeHtml(text) {
 }
 
 async function loadRegexPacks() {
-const packFiles = [
-  "hide-reasoning",
-  "html-vanquisher",
-  "braille-blank-jb",
-  "clocks",
-  "transitions",
-  "music-player",
-  "infoblock-pc",
-  "infoblock-mobile",
-  "psychological-portraits-pc",
-  "psychological-portraits-mobile"
-];
+  const packFiles = [
+    "hide-reasoning",
+    "html-vanisher",
+    "braille-blank-jb",
+    "clocks",
+    "transitions",
+    "music-player",
+    "infoblock-pc",
+    "infoblock-mobile",
+    "psychological-portraits-pc",
+    "psychological-portraits-mobile"
+  ];
 
   for (const file of packFiles) {
     try {

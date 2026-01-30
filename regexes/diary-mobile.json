@@ -3,8 +3,23 @@
   "description": "Личный дневник персонажа — мобильная версия",
   "scripts": [
     {
+      "id": "diary-mob-clean",
+      "scriptName": "┌ diary mobile clean",
+      "findRegex": "/📔(?=⸢📔)/g",
+      "replaceString": "",
+      "trimStrings": [],
+      "placement": [1, 2, 6],
+      "disabled": false,
+      "markdownOnly": true,
+      "promptOnly": false,
+      "runOnEdit": true,
+      "substituteRegex": 0,
+      "minDepth": null,
+      "maxDepth": null
+    },
+    {
       "id": "diary-mob-strike",
-      "scriptName": "┌ diary mobile strikethrough",
+      "scriptName": "├ diary mobile strikethrough",
       "findRegex": "/~~([^~]+)~~/g",
       "replaceString": "<del style=\"color:#6a6262;text-decoration:line-through;opacity:0.7\">$1</del>",
       "trimStrings": [],
@@ -36,7 +51,7 @@
       "id": "diary-mob-open",
       "scriptName": "├ diary mobile open",
       "findRegex": "/⸢📔[✏✒✑]\\|([^|]+)\\|([^|]+)\\|([^⸣]+)⸣/g",
-      "replaceString": "<style>.di-w{background:linear-gradient(145deg,#1e1d1d,#171616);border-radius:12px;box-shadow:4px 4px 8px #0d0c0c,-4px -4px 8px #252323;margin-top:8px;border:1px solid rgba(255,255,255,0.03);overflow:hidden;font-family:Georgia,serif}.di-w summary{background:transparent;color:#c9a227;padding:10px 14px;cursor:pointer;font-size:14px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}.di-ln{height:1px;background:linear-gradient(90deg,#7a9a72,#c9a227,#a84a5a);opacity:0.4;margin:0 14px}.di-m{padding:14px;color:#c4b8b8}.di-in{background:linear-gradient(145deg,#171616,#1e1d1d);border-radius:12px;padding:14px;box-shadow:inset 2px 2px 4px #0d0c0c,inset -2px -2px 4px #252323;border:1px solid rgba(255,255,255,0.02)}.di-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:10px;border-bottom:1px dashed rgba(201,162,39,0.3)}.di-nm{font-size:14px;color:#a84a5a;font-weight:bold}.di-dt{font-size:11px;color:#6a6262;font-style:italic}.di-e{margin-bottom:14px;padding:12px;background:repeating-linear-gradient(transparent,transparent 22px,rgba(122,154,114,0.08) 22px,rgba(122,154,114,0.08) 23px),linear-gradient(145deg,#1a1919,#151414);border-radius:10px;box-shadow:2px 2px 4px #0d0c0c,-2px -2px 4px #252323}.di-e:last-child{margin-bottom:0}.di-eh{display:flex;align-items:center;gap:8px;margin-bottom:8px}.di-et{font-size:10px;color:#7a9a72;text-transform:uppercase;letter-spacing:0.5px}.di-ex{color:#c9b8a8;line-height:1.7;font-size:13px}.di-s{background:repeating-linear-gradient(transparent,transparent 22px,rgba(122,154,114,0.08) 22px,rgba(122,154,114,0.08) 23px),linear-gradient(145deg,#151414,#121111);border-left:2px solid #6b5b7a}.di-s .di-et{color:#6b5b7a}.di-ch{display:flex;flex-direction:column;gap:2px;flex-shrink:0}.di-ch span{width:8px;height:8px;border-right:2px solid;border-bottom:2px solid;transform:rotate(45deg);animation:dib 1s ease infinite}.di-ch span:nth-child(2){animation-delay:0.15s}.di-cl span{border-color:#7a9a72}.di-cr span{border-color:#a84a5a}@keyframes dib{0%,100%{transform:translateY(0) rotate(45deg)}50%{transform:translateY(3px) rotate(45deg)}}</style><div class=\"di-w\"><details><summary><div class=\"di-ch di-cl\"><span></span><span></span></div><span style=\"flex:1;text-align:center\">Дневник</span><div class=\"di-ch di-cr\"><span></span><span></span></div></summary><div class=\"di-ln\"></div><div class=\"di-m\"><div class=\"di-in\"><div class=\"di-hd\"><div class=\"di-nm\">$1</div><div class=\"di-dt\">$2, $3</div></div>",
+      "replaceString": "<style>.di-w{background:linear-gradient(145deg,#1e1d1d,#171616);border-radius:12px;box-shadow:4px 4px 8px #0d0c0c,-4px -4px 8px #252323;margin-top:8px;border:1px solid rgba(255,255,255,0.03);overflow:hidden;font-family:Georgia,serif}.di-w summary{background:transparent;color:#c9a227;padding:10px 14px;cursor:pointer;font-size:13px;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}.di-ln{height:1px;background:linear-gradient(90deg,#7a9a72,#c9a227,#a84a5a);opacity:0.4;margin:0 14px}.di-m{padding:12px;color:#c4b8b8}.di-in{background:linear-gradient(145deg,#171616,#1e1d1d);border-radius:10px;padding:12px;box-shadow:inset 2px 2px 4px #0d0c0c,inset -2px -2px 4px #252323;border:1px solid rgba(255,255,255,0.02)}.di-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;padding-bottom:8px;border-bottom:1px dashed rgba(201,162,39,0.3)}.di-nm{font-size:13px;color:#a84a5a;font-weight:bold}.di-dt{font-size:10px;color:#6a6262;font-style:italic}.di-e{margin-bottom:12px;padding:10px;background:repeating-linear-gradient(transparent,transparent 20px,rgba(122,154,114,0.08) 20px,rgba(122,154,114,0.08) 21px),linear-gradient(145deg,#1a1919,#151414);border-radius:8px;box-shadow:2px 2px 4px #0d0c0c,-2px -2px 4px #252323}.di-e:last-child{margin-bottom:0}.di-eh{display:flex;align-items:center;gap:6px;margin-bottom:6px}.di-et{font-size:9px;color:#7a9a72;text-transform:uppercase;letter-spacing:0.5px}.di-ex{color:#c9b8a8;line-height:1.6;font-size:12px}.di-s{background:repeating-linear-gradient(transparent,transparent 20px,rgba(122,154,114,0.08) 20px,rgba(122,154,114,0.08) 21px),linear-gradient(145deg,#151414,#121111);border-left:2px solid #6b5b7a}.di-s .di-et{color:#6b5b7a}.di-ch{display:flex;flex-direction:column;gap:2px;flex-shrink:0}.di-ch span{width:7px;height:7px;border-right:2px solid;border-bottom:2px solid;transform:rotate(45deg);animation:dib 1s ease infinite}.di-ch span:nth-child(2){animation-delay:0.15s}.di-cl span{border-color:#7a9a72}.di-cr span{border-color:#a84a5a}@keyframes dib{0%,100%{transform:translateY(0) rotate(45deg)}50%{transform:translateY(3px) rotate(45deg)}}</style><div class=\"di-w\"><details><summary><div class=\"di-ch di-cl\"><span></span><span></span></div><span style=\"flex:1;text-align:center\">Дневник</span><div class=\"di-ch di-cr\"><span></span><span></span></div></summary><div class=\"di-ln\"></div><div class=\"di-m\"><div class=\"di-in\"><div class=\"di-hd\"><div class=\"di-nm\">$1</div><div class=\"di-dt\">$2, $3</div></div>",
       "trimStrings": [],
       "placement": [1, 2, 6],
       "disabled": false,

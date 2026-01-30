@@ -210,10 +210,10 @@ const packFiles = [
   "clocks",
   "clocks-minimal",
   "transitions",
-  "infoblock-pc",
-  "infoblock-mobile",
+  "infoblock",
   "psychological-portraits-pc",
-  "psychological-portraits-mobile"
+  "psychological-portraits-mobile",
+  "diary"
 ];
 
   for (const file of packFiles) {

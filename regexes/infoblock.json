@@ -1,6 +1,6 @@
 {
-  "name": "infoblock (pc)",
-  "description": "Сводка Ренетт — версия для ПК с details",
+  "name": "infoblock",
+  "description": "Сводка Ренетт",
   "scripts": [
     {
       "id": "c2f5ba75-f97f-4148-924d-01e2d5f40b65",
@@ -184,3 +184,4 @@
     }
   ]
 }
+

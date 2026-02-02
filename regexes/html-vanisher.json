@@ -5,7 +5,7 @@
     {
       "id": "a030ee87-57b5-4d6f-9981-114f6da3b2e4",
       "scriptName": "┌ html vanisher",
-      "findRegex": "/<[^>]+>/g",
+      "findRegex": "/<(?!\\/?(?:psy|ch|info|memo|ph|app|lk|ms|tw|ig|nt|diary|img)\\b)[^>]+>/g",
       "replaceString": "",
       "trimStrings": [],
       "placement": [1, 2, 3],

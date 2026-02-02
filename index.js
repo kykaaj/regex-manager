@@ -214,7 +214,7 @@ const packFiles = [
   "psychological-portraits-pc",
   "psychological-portraits-mobile",
   "phone (pc)",
-  "diary"
+  "diary-pc"
 ];
 
   for (const file of packFiles) {
@@ -350,3 +350,4 @@ window.RegexManager = {
   remove: removeRegexPack,
   debug: openDebugger
 };
+

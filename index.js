@@ -209,12 +209,15 @@ const packFiles = [
   "braille-blank-jb",
   "clocks",
   "clocks-minimal",
-  "transitions",
-  "infoblock",
-  "psychological-portraits-pc",
-  "psychological-portraits-mobile",
   "phone (pc)",
-  "diary-pc"
+  "diary-pc",
+  "diary-mobile",
+  "transitions",
+  "music-player",
+  "infoblock",
+  "infoblock-mobile",
+  "psychological-portraits-pc",
+  "psychological-portraits-mobile"
 ];
 
   for (const file of packFiles) {
@@ -350,4 +353,3 @@ window.RegexManager = {
   remove: removeRegexPack,
   debug: openDebugger
 };
-

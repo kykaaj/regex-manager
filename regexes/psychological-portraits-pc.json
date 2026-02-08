@@ -1,6 +1,6 @@
 {
-  "name": "psychological portraits (pc final)",
-  "description": "Психологические портреты — PC (Final Fix: Strict 1px Line, Anchors, Gold Title)",
+  "name": "psychological portraits (pc)",
+  "description": "Психологические портреты — PC",
   "scripts": [
     {
       "id": "psy-open",
@@ -173,3 +173,4 @@
     }
   ]
 }
+

@@ -34,8 +34,8 @@
     },
     {
       "id": "f301a341-6ac4-45cc-be3d-9b6db2a464d4",
-      "scriptName": "└ html vanisher",
-      "findRegex": "/[#.][a-zA-Z0-9_-][^{}]*\\{[^}]+\\}/g",
+      "scriptName": "└ html vanisher (Fixed)",
+      "findRegex": "/[#.][a-zA-Z0-9_-]+[^{}\\r\\n]*\\{[^}]+\\}/g",
       "replaceString": "",
       "trimStrings": [],
       "placement": [1, 2, 3],

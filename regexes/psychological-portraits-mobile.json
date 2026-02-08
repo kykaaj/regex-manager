@@ -1,6 +1,6 @@
 {
-  "name": "psychological portraits (mobile final)",
-  "description": "Психологические портреты — Mobile (Final Fix: Strict 1px Line, Anchors, Tags)",
+  "name": "psychological portraits (mobile)",
+  "description": "Психологические портреты — Mobile",
   "scripts": [
     {
       "id": "mob-psy-open",
@@ -173,3 +173,4 @@
     }
   ]
 }
+

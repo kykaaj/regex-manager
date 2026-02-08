@@ -1,6 +1,6 @@
 {
-  "name": "infoblock (mobile fixed v5)",
-  "description": "Сводка Ренетт — Mobile (Fix: 2-5 Stats, Syntax Errors, Icons Only)",
+  "name": "infoblock (mobile)",
+  "description": "Сводка Ренетт — Mobile",
   "scripts": [
     {
       "id": "mem-fix-rt-mistake",
@@ -251,3 +251,4 @@
     }
   ]
 }
+

@@ -1,6 +1,6 @@
 {
-  "name": "infoblock (pc fixed v5)",
-  "description": "Сводка Ренетт — PC (Fix: 2-5 Stats, Syntax Errors, Char Fields)",
+  "name": "infoblock (pc)",
+  "description": "Сводка Ренетт — PC",
   "scripts": [
     {
       "id": "mem-fix-rt-mistake",
@@ -251,3 +251,4 @@
     }
   ]
 }
+

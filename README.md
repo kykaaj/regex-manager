@@ -1,6 +1,6 @@
 # 🍏 Regex Manager
 
-Менеджер регексов для [**Яблочного пресета**](https://kykaaj.github.io/yablochny-preset/) в SillyTavern.
+Менеджер регексов для [**Яблочного пресета**](https://kykaaj.github.io/yablochny/) в SillyTavern.
 
 ## Установка
 
@@ -28,4 +28,4 @@
 
 ## Автор
 
-[Создано для Яблочного пресета 🍎](https://kykaaj.github.io/yablochny-preset/)
+[Создано для Яблочного пресета 🍎](https://kykaaj.github.io/yablochny/)
